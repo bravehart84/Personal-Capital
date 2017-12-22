@@ -2,7 +2,7 @@
 
 Hello,
 
-Thank you for the opportunity to work this Selenium code challenge. I automated the steps as instructed, I used the Page Object model 
+Thank you for the opportunity to work on this Selenium code challenge. I automated the steps as instructed, I used the Page Object model 
 
 with a Base Page, and other pages like the 'Homepage', 'Financial tools' page and 'SignUp' pages inheriting from the Basepage. Our test class is called
 
