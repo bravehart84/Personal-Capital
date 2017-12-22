@@ -11,20 +11,23 @@ var SignUpPage = require('../pages/sign_up_page.js');
 var test = require('selenium-webdriver/testing');
 
 
-var driver;
+
 
    var homepage = new HomePage();
 
    var financialpage = new FinancialPage();
 
-   
-
-   
-
-   var sign_up_page = new SignUpPage(driver);
+  var sign_up_page = new SignUpPage(driver);
 
 
- const mochaTimeOut = 10000; //ms
+
+
+
+
+  
+
+const mochaTimeOut = 10000; 
+
  
  test.describe('Regression Suite', function() {
 
@@ -36,22 +39,41 @@ var driver;
        
     });
   
-  test.it('Sign up for Personal Capital', function (done) {
+  test.it('Sign up for Personal Capital', function () {
 
     this.timeout(mochaTimeOut);
 
-    homepage.navigate_To_Financial_Tools();
+   homepage.navigate_To_Financial_Tools();
 
    
 
     
     
 
-     financialpage.clickSignUpLink();
+    financialpage.clickSignUpLink();
 
     sign_up_page.fillForm();
 
-    done();
+    
+
+     });
+
+  test.after(function(){
+    this.timeout(mochaTimeOut);
+
+     homepage.quitBrowser();
+       
+    });
+
+
+
+
+    
+
+  });
+
+  
+
 
     
  
