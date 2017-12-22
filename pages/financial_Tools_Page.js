@@ -1,17 +1,23 @@
 var webdriver = require('selenium-webdriver');
-var Homepage = require('./homepage.js');
-var FinancialPage=  require('./base_page.js');
+var Basepage = require('./base_page.js');
 var By= webdriver.By;
 
 
 
- 
+ class FinancialPage extends Basepage{
+
+    clickSignUpLink(){
+        this.navigateTo(By.className("track-join-now-cta rectangular-CTA-button orange space-right"));
+         return require('./sign_up_page.js');
+
+ }
+
+}
   
 
-    FinancialPage.prototype.clickSignUpLink = function() {
-       this.navigateTo(By.className("track-join-now-cta rectangular-CTA-button orange space-right"));
-    
-}
+
+
+
 
 
 
