@@ -1,27 +1,24 @@
 
-var HomePage = require('./base_page.js');
 var webdriver = require('selenium-webdriver');
-var assert= require('chai').assert;
+var Basepage = require('./base_page.js');
 var By= webdriver.By;
 
 
-        
-    
-HomePage.prototype.visit= function(homeurl){
-    this.visit(homeurl);
-}
 
+ class FinancialPage extends Basepage{
 
-HomePage.prototype.navigate_To_Financial_Tools= function(){
-    this.navigateTo(By.xpath(".//*[text()='FINANCIAL TOOLS']"));
-    
-        
+    clickSignUpLink(){
+        this.navigateTo(By.className("track-join-now-cta rectangular-CTA-button orange space-right"));
+         return require('./sign_up_page.js');
+
+ }
 
 }
+  
 
-HomePage.prototype.quitBrowser= function(){
-    this.quitBrowser();
-}
+
+
+
     
 
  
