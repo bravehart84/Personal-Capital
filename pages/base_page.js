@@ -12,51 +12,54 @@ var driver= this.driver =  new webdriver.Builder()
   
 
 
- var BasePage=  function () {
+
+
+
+    class BasePage {
+
+        constructor(){
    
-     global.driver= driver;
-
- 
-
+        global.driver= driver;
    
+        }
+    
+   
+      
+   
+   
+       visit(url){
+           driver.get(url);
+           
+       }
 
 
-    this.visit= function(url){
-        return driver.get(url);
+       navigateTo(ele) {
+        driver.wait(until.elementLocated(ele),5000);
+              driver.findElement(ele).click();
+                
         
-    }
-
-    
-
- 
-   
-
- 
-
-
-this.navigateTo= function(ele) {
-driver.wait(until.elementLocated(ele),5000);
-      driver.findElement(ele).click();
+            
+        
+          }
+        
+        
+          write(ele1, txt1, ele2, txt2, ele3, txt3){
+            driver.findElement(ele1).sendKeys(txt1);
+           
+            driver.findElement(ele2).sendKeys(txt2);
+            
+            driver.findElement(ele3).sendKeys(txt3 );
+        
+          }
+        
+          quitBrowser(){
+            driver.sleep(5000);
+              driver.quit();
+          }
         
 
     
 
-  }
-
-
-  this.write= function(ele1, txt1, ele2, txt2, ele3, txt3){
-    driver.findElement(ele1).sendKeys(txt1);
-   
-    driver.findElement(ele2).sendKeys(txt2);
-    
-    driver.findElement(ele3).sendKeys(txt3 );
-
-  }
-
-  this.quitBrowser= function(){
-    driver.sleep(5000);
-      driver.quit();
-  }
 
 }
 
@@ -69,3 +72,5 @@ driver.wait(until.elementLocated(ele),5000);
 
 
 module.exports = BasePage;
+
+  
