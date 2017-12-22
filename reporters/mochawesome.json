@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2017-12-21T23:05:42.929Z",
+    "end": "2017-12-21T23:06:42.521Z",
+    "duration": 59592,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "c0e8017c-ea0e-4aa5-9cf9-061221a08ec5",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "269519ac-06d4-422a-9861-09cecb2bb529",
+        "title": "Regression Suite",
+        "fullFile": "C:\\Users\\stabo\\PersonalCapital\\tests\\testing.js",
+        "file": "\\tests\\testing.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook: ret",
+            "fullTitle": "Regression Suite \"before all\" hook: ret",
+            "timedOut": false,
+            "duration": 47634,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(mochaTimeOut);\n    \n     homepage.visit(\" https://www.personalcapital.com/\");",
+            "err": {},
+            "isRoot": false,
+            "uuid": "f84bad1a-affd-4cdb-86d4-e5d026c29d49",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook: ret",
+            "fullTitle": "Regression Suite \"after all\" hook: ret",
+            "timedOut": false,
+            "duration": 5271,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(mochaTimeOut);\n homepage.quitBrowser();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e4ad59c1-b1b1-4636-8f58-d782e440021a",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "Sign up for Personal Capital",
+            "fullTitle": "Regression Suite Sign up for Personal Capital",
+            "timedOut": false,
+            "duration": 6665,
+            "state": "passed",
+            "speed": "slow",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "this.timeout(mochaTimeOut);\n    homepage.navigate_To_Financial_Tools();\n   \n    console.log(\"navigated to financial tools\");\n    \n     financialpage.clickSignUpLink();\n    sign_up_page.fillForm();",
+            "err": {},
+            "isRoot": false,
+            "uuid": "7da0ee60-1bee-4131-8156-2f382a6f98c0",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "7da0ee60-1bee-4131-8156-2f382a6f98c0"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 6665,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2017
+}
