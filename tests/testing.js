@@ -1,7 +1,7 @@
 
     
 var webdriver = require('selenium-webdriver');
-//var chrome= require('selenium-webdriver/chrome');
+
 HomePage = require('../pages/homepage.js');
 var FinancialPage = require('../pages/financial_Tools_Page.js');
 var SignUpPage = require('../pages/sign_up_page.js');
@@ -24,14 +24,9 @@ var driver;
    var sign_up_page = new SignUpPage(driver);
 
 
-
-
-
-  //var assert = require('assert');
-
-const mochaTimeOut = 70000; //ms
+ const mochaTimeOut = 10000; //ms
  
-test.describe('Regression Suite', function() {
+ test.describe('Regression Suite', function() {
 
   test.before(function(){
 
@@ -49,7 +44,7 @@ test.describe('Regression Suite', function() {
 
    
 
-    console.log("navigated to financial tools");
+    
     
 
      financialpage.clickSignUpLink();
