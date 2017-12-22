@@ -3,7 +3,7 @@ var HomePage = require('./base_page.js');
 var webdriver = require('selenium-webdriver');
 var assert= require('chai').assert;
 var By= webdriver.By;
-var homepage= new HomePage();
+
 
         
     
