@@ -15,4 +15,4 @@ and watch it execute the following workflow: Go to  https://www.personalcapital.
                                               No need to submit the form.
  There is also a HTML report available in the 'reporters' folder.
                                               
- Thank you once again, if you have any questions, or need me to add anything to the code, I'm available and would be happy to respond to your request!
+ Thank you once again, if you have any questions, I'm available and would be happy to respond to your request!
